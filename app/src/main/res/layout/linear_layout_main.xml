@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.usuario.taller2_racedo.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/One"
+            android:onClick="One"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            android:text="1"
+            app:layout_constraintBottom_toTopOf="@+id/Four"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/Two"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/Two"
+            android:onClick="Two"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="23dp"
+            android:text="2"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintRight_toLeftOf="@+id/Three"
+            android:layout_marginRight="0dp" />
+
+        <Button
+            android:id="@+id/Three"
+            android:onClick="Three"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="23dp"
+            android:text="3"
+            app:layout_constraintRight_toLeftOf="@+id/bSum"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/bSum"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="23dp"
+            android:onClick="Sum"
+            android:text="+"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Four"
+            android:onClick="Four"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/Five"
+            android:onClick="Five"
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/Six"
+            android:onClick="Six"
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/bRest"
+            android:onClick="Rest"
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Seven"
+            android:onClick="Seven"
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/Eight"
+            android:onClick="Eight"
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/Nine"
+            android:onClick="Nine"
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/bEqual"
+            android:onClick="Equal"
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="=" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Zero"
+            android:layout_width="wrap_content"
+            android:onClick="Zero"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+
+</LinearLayout>
